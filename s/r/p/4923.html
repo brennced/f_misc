@@ -21,16 +21,28 @@
 				color: #6160ff;
 				text-decoration: underline;
 			}
+			.groupbox {
+				display: inline-block;
+				border: 1px solid #c0c0c0;
+			}
+			.groupbox:before {
+				content: attr(data-group-header);
+				color: gray;
+				background-color: inherit;
+				position: relative;
+				left: 1px;
+				top: 1px;
+			}
 		</style>
 	</head>
 	<body>
 		<h1>Referat &bdquo;Die Blutdruckmessung&ldquo; &ndash; Quellen</h1>
-		<div class="groupbox">
+		<div class="groupbox" data-group-header="Textquellen">
 			<a href="http://de.wikipedia.org/?curid=160136">Wikipedia</a><br>
 			<a href="http://www.spektrum.de/lexikon/physik/blutdruckmessung/1782">Spektrum.de &ndash; Lexikon der Physik &rsaquo; Blutdruckmessung</a>
 		</div>
 		<br>
-		<div class="groupbox">
+		<div class="groupbox" data-group-header="Bildnachweise">
 			<a href="https://de.wikipedia.org/wiki/Datei:Blood_pressure_measurement.JPG">Bild Titelfolie</a><br>
 			<a href="http://www.spektrum.de/lexika/images/physik/fff1266.jpg">Bild Blutdruckmessung</a>
 		</div>
